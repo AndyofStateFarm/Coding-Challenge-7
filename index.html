@@ -1,3 +1,4 @@
+<!--U08282838--> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,29 @@
     <title>Basic Customer Feedback Portal</title>
 </head>
 <body>
-    
+    <h1>Customer Feedback Form</h1>
+    <form id="feedbackform">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Choose a rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select><br><br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea><br><br>
+
+            <button type="submit">Sumbit</button>
+    </form>
+
+    <h2>Feedback</h2>
+    <div id="feedbackDisplay"></div>
+
 </body>
 </html>
