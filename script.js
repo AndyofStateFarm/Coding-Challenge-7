@@ -15,5 +15,11 @@ document.getElementById("feedbackform").addEventListener("submit",(event)=>
         return;
     }
     // display feedback
-    document.getElementById("feedbackDisplay").innerHTML
+    document.getElementById("feedbackDisplay").innerHTML =
+    `
+    <h2>Feedback</h2>
+    <p><strong>Name: </strong> ${name}</p>
+    <p><strong>Rating: </strong> ${rating}</p>
+    <p><strong>Comments: </strong> ${comments}</p>
+    `
 })
